@@ -3,8 +3,8 @@ use Mix.Config
 # Configure your database
 config :aula, Aula.Repo,
   username: "postgres",
-  password: "postgres",
-  database: "aula_dev",
+  password: "root",
+  database: "postgres",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
