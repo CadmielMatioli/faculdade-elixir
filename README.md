@@ -2,74 +2,57 @@
 
 ## Configurações da maquina
     Maquina virtual: virtual Box
-    Sistema operacional: ZorinOs lite 64bits
-    Memória ram: 6gb
-    Processador: 2 nucleos
+    Sistema operacional: Windows 10 64bits
+    Memória ram: 16gb
+    Processador: i5 7700 4 nucleos
 
 ## Requisitos
-    VS code
-    git
-    erlang 24.0
-    elixir 1.12
-    asdf
+    VS code ou Qualquer outra IDE
+    git, erlang, elixir, postgres, nodejs, npm
 
 ## Instalando requisitos
-#### Instalando Git
+#### Instalando Git para clonar o repositório
 ```
-$ sudo apt install curl git
+Link para download do instalador https://git-scm.com/downloads 
 ```
-
-#### Instalando asdf
-```
-$ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
-```
-```
-$ . $HOME/.asdf/asdf.sh
-```
-```
-$ . $HOME/.asdf/completions/asdf.bash
+### instalando e configurando o npm 
 ```
 
-#### Instalando erlang
 ```
-$ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+#### Instalando elixir no windows
 ```
-```
-$ asdf install erlang 24.0
-```
-```
-$ sudo apt-get -y install build-essential autoconf m4 libncurses5-dev libwxgtk3.0-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop
+Link do instalador https://elixir-lang.org/install.html#windows
 ```
 
-#### Instalando o elixir
-
+#### Instalando phoenix 
+Após instalar o elixir o comando mix passará a funcionar
 ```
-$ asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git
+$ mix archive.install hex phx_new
 ```
+#### Criando projeto com phoenix
 ```
-$ asdf install elixir 1.12
+$ mix phx.new aula
 ```
-Ver a versão instalada do elixir
+#### executando projeto com phoenix
 ```
-$ elixir -v
-```
-
-#### Com o elixir instalado para criar um projeto utilize 
-```
-$ mix new <nome do projeto>
+$ cd aula 
 ```
 
-#### como testar?
+#### após realizado o procedimento do postgress
 ```
-$ mix test
+$ cd assets "npm install"
+$ cd aula ou cd ..
+$ mix ecto.create
 ```
 
-#### como formatar o código?
+#### iniciando o projeto
 ```
-$ mix format
+$ mix phx.server
 ```
+
 ## Referencias
 1. https://youtu.be/w9x2XWdsQQI
 2. http://asdf-vm.com/guide/getting-started.html#_1-install-dependencies
 3. https://github.com/asdf-vm/asdf-erlang
 4. https://github.com/asdf-vm/asdf-elixir
+5. https://hexdocs.pm/phoenix/installation.html
