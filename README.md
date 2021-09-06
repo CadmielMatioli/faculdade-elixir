@@ -1,5 +1,5 @@
 # Aula
-### Acesse o video clicando aqui -> [`Primeiro projeto phoenix no elixir`](https://www.youtube.com/watch?v=WUTI5yG1RLQ)
+### Acesse o video clicando aqui -> [`Primeiro projeto phoenix no elixir`](https://youtu.be/yWhgxsiVRUw)
 Para iniciar seu servidor Phoenix:
 
   * Instale dependências com `mix deps.get`
